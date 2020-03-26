@@ -44,6 +44,7 @@ if (age < 18) {
   document.getElementById('apply') .innerHTML = 'applicheremo';
   document.getElementById('valore-sconto') .innerHTML = ' del 20%';
   document.getElementById('sconto') .innerHTML = ' pari a: ' + sconto_20.toFixed(2) + ' €';
+  document.getElementById('totale-scontato') .innerHTML = 'il prezzo totale scontato è: ' + totale_sconto20.toFixed(2) + ' €';
 } else if (age >= 65) {
   // 5.1 applico sconto del 40% over 65
   var totale_sconto40 = prezzo - sconto_40;
@@ -54,6 +55,7 @@ if (age < 18) {
   document.getElementById('apply') .innerHTML = 'applicheremo';
   document.getElementById('valore-sconto') .innerHTML = ' del 40%';
   document.getElementById('sconto') .innerHTML = ' pari a: ' + sconto_40.toFixed(2) + ' €';
+  document.getElementById('totale-scontato') .innerHTML = 'il prezzo totale scontato è: ' + totale_sconto40.toFixed(2) + ' €';
 } else {
   console.log('prezzo totale: ', prezzo.toFixed(2) +' €');
   // visualizzo nessuno sconto
