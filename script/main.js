@@ -33,17 +33,17 @@ var sconto_40 = prezzo * 40 / 100;
 if (age < 18) {
   // 4.1- applico sconto del 20% per i minorenni
   var totale_sconto20 = prezzo - sconto_20;
-  console.log('Il prezzo totale: ', prezzo +' €');
+  console.log('Il prezzo totale: ', prezzo.toFixed(2) +' €');
   console.log('il prezzo totale scontato del 20% è:', totale_sconto20.toFixed(2) + ' €');
   console.log('il valore dello sconto è: ', sconto_20 + ' €');
 } else if (age >= 65) {
   // 5.1 applico sconto del 40% over 65
   var totale_sconto40 = prezzo - sconto_40;
-  console.log('Il prezzo totale: ', prezzo +' €');
+  console.log('Il prezzo totale: ', prezzo.toFixed(2) +' €');
   console.log('il prezzo totale scontato del 40% è:', totale_sconto40.toFixed(2) + ' €');
   console.log('il valore dello sconto è:', sconto_40 + ' €');
 } else {
-  console.log('prezzo totale: ', prezzo +' €');
+  console.log('prezzo totale: ', prezzo.toFixed(2) +' €');
 }
 
 // 6- mostrare a schermo il prezzo del biglietto indicando se è stato applicato uno sconto
